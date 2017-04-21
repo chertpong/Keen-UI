@@ -22,7 +22,7 @@ export function looseEqual(a, b) {
  * Check if a val exists in arr using looseEqual comparison
  */
 export function looseIndexOf(arr, val) {
-    for (let i = 0; i < arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         if (looseEqual(arr[i], val)) {
             return i;
         }
